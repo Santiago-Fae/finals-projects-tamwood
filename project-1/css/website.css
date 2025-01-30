@@ -1,0 +1,208 @@
+/* CONTENT */
+.wrapper {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+}
+
+.bgLightGray {
+	background: #e1e1e1;
+}
+
+.containerExtended {
+	max-width: 1540px;
+	margin: 0 auto;
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	overflow: visible;
+}
+
+.boxTextContent > * {
+	margin-top: 28px;
+}
+
+.boxTextContent > :first-child {
+	margin-top: 0;
+}
+
+
+
+.artigosBox {
+	max-width: 388px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+}
+
+.artigosBox img {
+	width: 388px;
+}
+
+
+.artigoDescricao {
+	background: #FFFFFF;
+	padding: 40px;
+}
+
+.artigoDescricao h4 {
+	color: #AC6356;
+}
+
+.artigoBarra {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 26px;
+}
+
+.galeriaDeImagens {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-right: -8px;
+
+}
+
+.galeriaDeImagens a {
+	width: calc(25% - 8px);
+	margin: 0 8px 8px 0;
+}
+
+/* FOOTER */
+.footer {
+	background-color: #5f9bce;
+}
+
+.footer .boxFooterMenu {
+	
+}
+
+.footer .boxFooterMenu ul {
+	
+}
+
+.footer .boxFooterMenu ul li {
+	
+}
+
+.footer .finalInfo .politicaPrivacidade {
+	
+}
+
+.footer .finalInfo .politicaPrivacidade:hover {
+	
+}
+
+.footer .finalInfo .logoIlex svg {
+	transition: all 150ms ease;
+}
+
+.footer .finalInfo .logoIlex:hover svg {
+	opacity: 1;
+}
+
+
+
+/* BOX PAGINAÇÃO */
+.boxPagination {
+	font-family: sans-serif;
+	text-align: center;
+}
+
+.boxPagination .page {
+	padding: 10px 9px;
+	font-weight: 500;
+	font-size: 20px;
+	line-height: 0.8;
+	text-align: center;
+	color: #0084c8;
+}
+
+.boxPagination .page.actual {
+	font-size: 22px;
+	font-weight: 700;
+	color: #3eb54a;
+}
+
+.boxPagination .page.prevNextLast {
+	font-size: 28px
+}
+
+
+
+
+/* OUTROS */
+.boxVideo {
+	position: relative;
+	padding-bottom: 56.25%;
+	padding-top: 2px;
+	height: 0;
+}
+
+.boxVideo iframe {
+	position: absolute;
+	top: 0;
+	left: 0;
+	width: 100%;
+	height: 100%;
+	border: 0;
+	outline: 0;
+}
+
+.btToTop {
+	position: fixed;
+	right: 2.9vw;
+	bottom: -100px;
+	padding: 21px;
+	background: url(../../img/icons/icon-arrow-up-1.svg) no-repeat center #fff;
+	background-size: 23px auto;
+	border: 3px solid #3A3A3A;
+	border-radius: 50%;
+	transition: bottom 0.25s ease-out;
+	z-index: 50;
+}
+
+.btToTop.shown {
+	bottom: 45px;
+}
+
+
+
+
+
+
+/* ########## */
+/* RESPONSIVE */
+/* ########## */
+
+
+/* 1440px */
+@media screen and (max-width: 1440px) {
+	
+}
+
+
+/* 1279px */
+@media screen and (max-width: 1279px) {
+	
+}
+
+
+/* 1023px */
+@media screen and (max-width: 1023px) {
+	
+}
+
+
+/* 767px */
+@media screen and (max-width: 767px) {
+	
+}
+
+
+/* 639px */
+@media screen and (max-width: 639px) {
+	
+}

@@ -1,0 +1,77 @@
+<footer class="footer">
+  <div class="container mx-auto px-3">
+			<!-- 			<div class="flex items-center w-1/2 lg:pr-6">
+				<h3 class="titleStyle1 small text-white">Mídias Sociais</h3>
+				<nav class="boxFooterMenu mt-5">
+					<ul>
+						<li><a href="mailto:<?php echo GAD_SITE_EMAIL; ?>">Email</a></li>
+						<li><a href="<?php echo GAD_SOCIAL_MEDIA_FACEBOOK; ?>">Facebook</a></li>
+						<li><a href="<?php echo GAD_SOCIAL_MEDIA_INSTAGRAM; ?>">Instagram</a></li>
+						<li><a href="tel://+55<?php echo Common::onlyNumbers(GAD_SITE_TELEFONE); ?>">WhatsApp</a></li>
+						<li><a href="./blog">Blog</a></li>
+					</ul>
+				</nav>
+			</div> -->
+
+			<div class="flex items-center justify-between mt-6 text-center pt-3 lg:mt-0 lg:text-left">
+				<h3 class="titleStyle1 small text-white">Contato</h3>
+				<p class="mt-3 lg:mt-5">
+					Avenida Júlio de Castilhos, 81 - sala 501<br>
+					Lourdes, Caxias do Sul - RS<br>
+					CEP 95010-003
+				</p>
+				<div class="boxContatos flex flex-col mt-4 lg:mt-8">
+					<a href="tel://+55<?php echo Common::onlyNumbers(GAD_SITE_TELEFONE); ?>" onclick="telefoneFooterEventConversion();"><?php echo GAD_SITE_TELEFONE; ?></a>
+					<a href="mailto:<?php echo GAD_SITE_EMAIL; ?>" class="mt-4" onclick="emailFooterEventConversion();"><?php echo GAD_SITE_EMAIL; ?></a>
+				</div>
+				<ul class="flex flex-col items-center">
+					<li><a href="mailto:<?php echo GAD_SITE_EMAIL; ?>">Email</a></li>
+					<li><a href="<?php echo GAD_SOCIAL_MEDIA_FACEBOOK; ?>">Facebook</a></li>
+					<li><a href="<?php echo GAD_SOCIAL_MEDIA_INSTAGRAM; ?>">Instagram</a></li>
+					<li><a href="tel://+55<?php echo Common::onlyNumbers(GAD_SITE_TELEFONE); ?>">WhatsApp</a></li>
+					<li><a href="./blog">Blog</a></li>
+				</ul>
+			</div>
+
+		<div class="flex flex-col justify-between items-center mt-12 text-center lg:flex-row lg:text-left">
+			<a href="./politica-de-privacidade" class="politicaPrivacidade">Política de Privacidade</a>
+			
+			<div class="copyright">Psicóloga Andiara Faé © <?php echo date("Y"); ?></div>
+			<a href="https://www.ilex.com.br/" title="Agência de Marketing Digital e Desenvolvimento Web" aria-label="Agência de Marketing Digital e Desenvolvimento Web" target="_blank" rel="noreferrer" class="logoIlex">
+				<svg width="48" height="14" viewBox="0 0 48 14" fill="none" xmlns="http://www.w3.org/2000/svg">
+					<g opacity="0.5">
+					<path d="M0.407513 8.65705H4.01896C4.32748 8.65705 4.48205 8.52136 4.48205 8.24953V0.543011C4.48205 0.419646 4.42934 0.320793 4.32463 0.246672C4.21953 0.172552 4.1177 0.135498 4.01896 0.135498H0.407513C0.271461 0.135498 0.169626 0.175795 0.101849 0.255867C0.0338232 0.336331 0 0.431836 0 0.543011V8.24953C0 8.52136 0.135672 8.65705 0.407513 8.65705Z" fill="#767676"/>
+					<path d="M4.48205 10.3482C4.48205 10.2248 4.42934 10.126 4.32463 10.0518C4.21953 9.97773 4.1177 9.94067 4.01896 9.94067H0.407513C0.271461 9.94067 0.169626 9.98096 0.101849 10.0611C0.0338232 10.1415 0 10.237 0 10.3482V13.4706C0 13.7424 0.135672 13.8781 0.407513 13.8781H4.01896C4.32748 13.8781 4.48205 13.7424 4.48205 13.4706V10.3482Z" fill="#767676"/>
+					<path d="M17.3452 13.7298C17.4193 13.631 17.4564 13.5323 17.4564 13.4334V10.3404C17.4564 10.2047 17.4161 10.1029 17.336 10.0349C17.2555 9.9671 17.16 9.93303 17.0489 9.93303H11.2519V0.543011C11.2519 0.419646 11.2024 0.320793 11.1038 0.246672C11.0048 0.172552 10.9061 0.135498 10.8075 0.135498H7.39957C7.26365 0.135498 7.16168 0.175795 7.09402 0.255867C7.026 0.336331 6.99219 0.431836 6.99219 0.543011V13.4704C6.99219 13.7422 7.12786 13.8779 7.39957 13.8779H17.0489C17.1722 13.8779 17.2711 13.8287 17.3452 13.7298Z" fill="#767676"/>
+					<path d="M20.2941 13.8779H29.8693C30.0297 13.8779 30.1472 13.8347 30.2212 13.7482C30.3075 13.6371 30.3509 13.526 30.3509 13.4149V10.8035C30.3509 10.6677 30.3106 10.5659 30.2305 10.4978C30.1501 10.4302 30.0546 10.396 29.9434 10.396H24.1464V8.59947H27.9617C28.0974 8.59947 28.1993 8.55954 28.2672 8.47909C28.335 8.39889 28.3692 8.32801 28.3692 8.26608V5.76583C28.3692 5.6671 28.3289 5.58988 28.2488 5.53429C28.1684 5.4787 28.0729 5.45098 27.9617 5.45098H24.1464V3.5618H29.7397C29.8754 3.5618 29.9773 3.50945 30.0452 3.40438C30.113 3.29968 30.1472 3.19783 30.1472 3.09883V0.543011C30.1472 0.407221 30.1069 0.305372 30.0267 0.237347C29.9463 0.169701 29.8509 0.135498 29.7397 0.135498H20.2941C20.1582 0.135498 20.0562 0.175795 19.9886 0.255867C19.9206 0.336331 19.8867 0.431836 19.8867 0.543011V13.4704C19.8867 13.7422 20.0224 13.8779 20.2941 13.8779Z" fill="#767676"/>
+					<path d="M42.4353 6.5366L46.2979 0.488081C46.3473 0.401784 46.372 0.333758 46.372 0.284266C46.372 0.210145 46.3337 0.17372 46.261 0.154454C46.2169 0.142761 46.162 0.137281 46.1285 0.136038L43.9032 0.133671H41.5241C41.3193 0.146227 41.1799 0.278917 41.0415 0.483229L39.6551 2.4618C39.6551 2.4618 38.9715 1.51337 37.4437 0.817484C35.835 0.0848063 34.514 0 34.514 0L32.6653 3.83118C32.6653 3.83118 34.031 3.90492 35.4165 4.67965C36.7859 5.44541 37.1933 6.34561 37.1933 6.34561C37.1933 6.34561 32.5639 13.5481 32.5146 13.6467C32.5022 13.6716 32.4961 13.7023 32.4961 13.7395C32.4961 13.789 32.5146 13.8259 32.5518 13.8506C32.5727 13.8647 32.5938 13.8738 32.6149 13.8798H37.4708C37.6255 13.8425 37.7369 13.7328 37.8298 13.5613L39.8036 10.4204L41.8079 13.5539C41.8079 13.5539 41.9067 13.7334 41.9934 13.7949C42.0555 13.8395 42.1209 13.8673 42.1894 13.8798H46.9688C47.015 13.8571 47.0407 13.8163 47.0407 13.7524C47.0407 13.666 42.4353 6.5366 42.4353 6.5366Z" fill="#767676"/>
+					</g>
+				</svg>
+			</a>
+		</div>
+  </div>
+</footer>
+
+<?php
+	TimeTracker::track('Page Content Render');
+
+	//Final Assets
+	AssetManager::writeAll('css-external.min', false, false, 'css'); 
+	AssetManager::writeAll('css-basic.min', false, true, 'css');
+	AssetManager::writeAll('css-jquery.min', false, false, 'css');
+	AssetManager::writeAll('js-basic.min', false, true, 'js');
+	AssetManager::writeAll('js-external.min', false, false, 'js');
+	
+	
+	//Last pieces of code
+	PCWMPage::writeFooter();
+
+
+	//Output Loaders
+	AssetManager::outputDeferedLoaders();
+
+
+	//Include TAGs
+	//Common::includeFile('tags.php');
+	include(LIB . 'lgpd/includes/aviso-cookies.php');
+?>

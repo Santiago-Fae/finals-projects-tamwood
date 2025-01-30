@@ -1,0 +1,19 @@
+.button.adocoes.btn-grad {background-image: linear-gradient(to right, #ff77b5 0%, #fec76c  51%, #ff77b5  100%)}
+.button.adocoes.btn-grad {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+}
+
+.button.adocoes.btn-grad:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+}

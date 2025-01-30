@@ -1,0 +1,103 @@
+.button {
+	display: inline-block;
+	min-width: 260px;
+	margin: 0;
+	padding: 15px 30px;
+	font-family: '', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	color: #ffffff;
+	background-color: #5f9bce;
+	transition: all 0.15s ease-out;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	border-color: #3EB54A;
+}
+
+
+
+
+/* VARIATIONS */
+.button.block, .button.fullWidth {
+	display: block;
+	width: 100%;
+}
+
+.button.big {
+	padding: 18px 32px;
+	font-size: 1.6rem;
+	line-height: 1.4em;
+}
+
+.button.medium {
+	padding: 12px 26px;
+	font-size: 1.2rem;
+	line-height: 1.4em;
+}
+
+.button.small {
+	padding: 8px 22px;
+	font-size: 1rem;
+	line-height: 1.2em;
+}
+
+.button.smaller {
+	padding: 6px 16px;
+	font-size: 0.9rem;
+	line-height: 1.2em;
+}
+
+
+
+
+/* COLORS */
+.button.white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.button.white:hover {
+	border-color: #fff;
+	color: #fff;
+}
+
+
+
+
+
+/* ########## */
+/* RESPONSIVE */
+/* ########## */
+
+
+/* 1279px */
+@media screen and (max-width: 1279px) {
+
+}
+
+
+/* 1023px */
+@media screen and (max-width: 1023px) {
+	
+}
+
+
+/* 767px */
+@media screen and (max-width: 767px) {
+
+}
+
+
+/* 639px */
+@media screen and (max-width: 639px) {
+	
+}

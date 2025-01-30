@@ -1,0 +1,74 @@
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8"/>
+<meta http-equiv="X-UA-Compatible" content="IE=edge,chrome=1"/>
+
+<meta name="copyright" content="&copy; <?php echo date('Y'); echo (($clientName = PCWMConfig::get('clientName')) && strlen($clientName)) ? " - {$clientName}" : ''; ?>"/>
+<meta name="robots" content="index, follow"/>
+<meta name="rating" content="general"/>
+<meta name="viewport" content="width=device-width, initial-scale=1.0, minimum-scale=1.0">
+
+<base href="<?php echo WEBSITE_URL; ?>/">
+
+<!-- <link rel="shortcut icon" href="./img/favicon.png?r=<?php echo round(time() / (60*60*24)); ?>" type="image/x-icon">
+<link rel="icon" href="./img/favicon.png?r=<?php echo round(time() / (60*60*24)); ?>" type="image/x-icon">
+ -->
+<link rel="preconnect" href="https://fonts.googleapis.com">
+<link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+
+<?php
+	//Init Assets
+	AssetManager::initDeferers();
+
+	//Above the Fold CSS
+	AssetManager::outputAll('css-critical.min', true, 'css');
+	AssetManager::writeAll('css-tailwind.min', false, false, 'css');
+	
+	//First Assets to load
+	AssetManager::writeAll('css-fonts', false, false, 'css');
+?>
+
+<script>
+	var LANG = '<?php PCWMLang::echoLang(); ?>';
+	var LANG_FOR_CODE = '<?php echo PCWMLang::getLangForCode(); ?>';
+	var WEBSITE_URL = '<?php echo WEBSITE_URL; ?>';
+
+	dataLayer = typeof dataLayer == 'undefined' ? [] : dataLayer;
+
+	/* <![CDATA[ */
+	function addLoadEvent(func) {
+		var oldOnload = window.onload;
+
+		if (typeof window.onload != 'function') {
+			window.onload = func;
+		}
+		else {
+			window.onload = function () {
+				oldOnload();
+				func();
+			}
+		}
+	}
+	/* ]]> */
+</script>
+
+<?php /*
+<script>
+	var counterNumberFinal = [];
+	var counterYear = <?php echo date('Y'); ?>;
+
+	<?php
+		$co2Data = explode(',', GAD_CO2_DATA);
+		$aux = array();
+		$found = false;
+		$lastData = false;
+
+		foreach ($co2Data as $i => $data) {
+			$lastData = explode(':', $data);
+			?>counterNumberFinal[<?php echo $lastData[0]; ?>] = <?php echo $lastData[1]; ?>;<?php
+
+			if ($lastData[0] == date('Y')) {
+				define("CURRENT_CO2_IN_YEAR", floatval($lastData[1]));
+			}
+		}
+	?>
+</script>
+*/ ?>
