@@ -44,7 +44,7 @@
 
 
 .artigoDescricao {
-	background: #FFFFFF;
+	background: #e1e1e1;
 	padding: 40px;
 }
 
@@ -72,31 +72,21 @@
 
 /* FOOTER */
 .footer {
-	background-color: #5f9bce;
+	background-image: linear-gradient(to right, #ff77b5 0%, #fec76c  100%);
 }
 
-.footer .boxFooterMenu {
-	
+.footer .hr {
+	height: 1px;
+	color: #fff;
+	display: block;
 }
 
-.footer .boxFooterMenu ul {
-	
+.footer {
+	font-weight: 700;
 }
 
-.footer .boxFooterMenu ul li {
-	
-}
-
-.footer .finalInfo .politicaPrivacidade {
-	
-}
-
-.footer .finalInfo .politicaPrivacidade:hover {
-	
-}
-
-.footer .finalInfo .logoIlex svg {
-	transition: all 150ms ease;
+.footer ul li:hover {
+	color: #fff;
 }
 
 .footer .finalInfo .logoIlex:hover svg {

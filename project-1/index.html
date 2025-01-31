@@ -94,26 +94,50 @@
 		<!-- DEPOIMENTOS -->
 		<section id="SectionDepoimentos" class="py-12 sm:py-16 lg:py-20">
 			<div class="px-3 text-center">
-				<h1 class="titleStyle1">Depoimentos</h1>
-				<p class="mt-4 mb-6 sm:mt-6 sm:mb-10">O que meus pacientes dizem:</p>
+				<h1 class="titleStyle1">Adoções</h1>
+				<p class="mt-4 mb-6 sm:mt-6 sm:mb-10">Nossos finais felizes:</p>
 
 				<div class="boxDepoimentos">
-					<div class="listaDepoimentos">
-						<?php
-						$empresaDepoimentos = LogicConteudos::getContentFromCategory("depoimentos");
-						if ($empresaDepoimentos) {
-							foreach ($empresaDepoimentos as $depoimento) {
-								?>
-								<div class="itemLista">
-									<div class="contentItem flex flex-wrap justify-center items-center">
-										<p class="w-full text-base leading-normal"><?php echo $depoimento->resumo_pt_br; ?></p>
-										<h3 class="w-full mt-6 text-base font-black"><?php echo $depoimento->titulo_pt_br; ?></h3>
-									</div>
+					<div class="artigosGeraisLista flex md:mt-16 lg:mt-0">
+						<a href="./blog-aberto/" class="artigosBox flex flex-col mr-6">
+							<img class="" src="./img/client-images/adopt-1.jpeg">
+							<div class="artigoDescricao">
+								<h3 class="titleStyle3"></h3>
+								<div class="paragrafosGerais mt-5">
+									<p class="data text-base leading-7">Joaquim</p>
 								</div>
-								<?php
-							}
-						}
-						?>
+								<div class="artigoBarra"></div>
+								<div class="paragrafosGerais mt-5">
+									<p class="text-base leading-7">Joaquim foi resgatado em situação de maus-tratos e abandono. Hoje, ele vive em um lar amoroso e cheio de carinho.</p>
+								</div>
+							</div>
+						</a>
+						<a href="./blog-aberto/" class="artigosBox flex flex-col mr-6">
+							<img class="" src="./img/client-images/adopt-1.jpeg">
+							<div class="artigoDescricao">
+								<h3 class="titleStyle3"></h3>
+								<div class="paragrafosGerais mt-5">
+									<p class="data text-base leading-7">Joaquim</p>
+								</div>
+								<div class="artigoBarra"></div>
+								<div class="paragrafosGerais mt-5">
+									<p class="text-base leading-7">Joaquim foi resgatado em situação de maus-tratos e abandono. Hoje, ele vive em um lar amoroso e cheio de carinho.</p>
+								</div>
+							</div>
+						</a>
+						<a href="./blog-aberto/" class="artigosBox flex flex-col mr-6">
+							<img class="" src="./img/client-images/adopt-1.jpeg">
+							<div class="artigoDescricao">
+								<h3 class="titleStyle3"></h3>
+								<div class="paragrafosGerais mt-5">
+									<p class="data text-base leading-7">Joaquim</p>
+								</div>
+								<div class="artigoBarra"></div>
+								<div class="paragrafosGerais mt-5">
+									<p class="text-base leading-7">Joaquim foi resgatado em situação de maus-tratos e abandono. Hoje, ele vive em um lar amoroso e cheio de carinho.</p>
+								</div>
+							</div>
+						</a>
 					</div>
 				</div>
 			</div>
@@ -124,94 +148,60 @@
 			<div class="containerExtended px-3 text-center">
 				<div class="">
 					<div>
-						<?php
-						$galeria = LogicConteudos::getContentFromCategory("galeria")[0];
-						$listaImagens = LogicConteudosImagens::filter(['conteudo' => $galeria->id]);
-
-						if ($listaImagens) {
-							?>
-								<!-- LISTA IMAGENS -->
-								<h1 class="titleStyle1 mediumGrey medium mt-16 mb-6">Galeria de imagens</h1>
-								<div class="galeriaDeImagens">
-									<?php
-										foreach ($listaImagens as $imagem) {
-											$img = LogicConteudosImagens::getImageUploadFolder(true) . $imagem->filename;
-											?>
-												<a href="<?php echo $img; ?>" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
-													<img 
-														src="<?php echo PCWMImage::cacheImage($img, 400, false, ['quality' => 80, 'crop' => true]) ?>"
-														alt="<?php echo $imagem->legenda; ?>"
-														>
-												</a>	
-											<?php
-										}
-									?>
-								</div>
-								<!-- LISTA IMAGENS END -->
-							<?php
-						}
-						?>
+						<!-- LISTA IMAGENS -->
+						<h1 class="titleStyle1 mediumGrey medium mt-16 mb-6">Galeria de imagens</h1>
+						<div class="galeriaDeImagens">
+							<a href="" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
+								<img 
+									src="./img/client-images/pet-2.jpg"
+									alt=""
+									>
+							</a>
+							<a href="" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
+								<img 
+									src="./img/client-images/pet-3.jpg"
+									alt=""
+									>
+							</a>
+							<a href="" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
+								<img 
+									src="./img/client-images/pet-4.jpg"
+									alt=""
+									>
+							</a>	
+							<a href="" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
+								<img 
+									src="./img/client-images/pet-1.jpg"
+									alt=""
+									>
+							</a>	
+							<a href="" class="s-lightbox" data-s-lightbox-group="galeriaImagens" aria-label="Ampliar imagem">
+								<img 
+									src="./img/client-images/pet-1.jpg"
+									alt=""
+									>
+							</a>	
+						</div>
+						<!-- LISTA IMAGENS END -->
 					</div>
 				</div>
 			</div>
 		</section>
 		<!-- GALERIA END -->
-		<!-- BLOG -->
-		<section id="OutrosArtigos" class="py-12 sm:py-16 lg:py-20">
-			<div class="containerExtended mx-auto flex flex-col items-center">
-				<div class="flex flex-col items-center">
-					<h1 class="titleStyle1">Artigos</h1>
-					<div class="paragrafosBanners mt-6">
-						<p>Artigos e novidades a respeito do meu trabalho.</p>
-					</div>
-					<div class="flex align-left mt-10">
-						<a href="./blog" class="buttonBanner">Leia todos os artigos</a>
-					</div>
-				</div>
-				<div class="artigosGeraisLista flex md:mt-16 lg:mt-0">
-					<?php 
-					$listaBlog = LogicBlog::filter(['is_ativo' => 1, 'ipp' => 3]);
-					if ($listaBlog) { 
-						foreach ($listaBlog as $item) {
-							$img = LogicBlogImagens::getImageUploadFolder(true) . LogicBlogImagens::getPrimaryImage($item->id)->filename;
-							$dataPublicacaoAleatorios = Common::sql2date($item->data_publicacao, "-", $horas = false);
-							$dateAletorios = new DateTime($dataPublicacaoAleatorios);
-
-							if (!LogicBlogImagens::getPrimaryImage($item->id)->filename) {
-								$img = PCWMImage::cacheImage('./img/im-no-photo.jpg', 388, false);
-							}
-							?>
-							<a href="./blog-aberto/<?php echo $item->slug ?>" class="artigosBox flex flex-col mr-6">
-								<img class="" src="<?php echo PCWMImage::cacheImage($img, 388, false); ?>">
-								<div class="artigoDescricao">
-									<h3 class="titleStyle3"><?php echo $item->titulo_pt_br; ?></h3>
-									<div class="paragrafosGerais mt-5">
-										<p class="data text-base leading-7"><?php echo strftime('%e de %B de %Y', $dateAletorios->format("U")); ?></p>
-									</div>
-									<div class="artigoBarra"></div>
-									<div class="paragrafosGerais mt-5">
-										<?php 
-										if (strlen($item->resumo_pt_br) > 150) {
-											$resumo = substr($item->resumo_pt_br, 0, 150) . '...';
-										}
-										else {
-											$resumo = $item->resumo_pt_br;
-										} 
-										?>
-										<p class="text-base leading-7"><?php echo $resumo; ?></p>
-									</div>
-								</div>
-							</a>
-							<?php
-						}
-					}
-					?>
-				</div>
-			</div>
-		</section>
-		<!-- BLOG END -->
 	</main>
-
-    <?php Common::includeFile('footer.php'); ?>
 	</body>
+	<footer class="footer">
+		<div class="container mx-auto px-3 py-5">
+			<div class="flex items-center justify-center text-center lg:mt-0 lg:text-left">
+				<ul class="flex items-center">
+					<li class="mr-5"><a class=""href="<?php echo GAD_SOCIAL_MEDIA_INSTAGRAM; ?>">Instagram</a></li>
+					<li class="ml-5"><a href="tel://+55<?php echo Common::onlyNumbers(GAD_SITE_TELEFONE); ?>">WhatsApp</a></li>
+				</ul>
+			</div>
+			<hr class="hr my-5">
+			<div class="flex justify-center items-center text-center">				  
+				<div class="copyright">Santiago Faé © </div>
+			</div>
+		</div>
+	</footer>	  
 </html>
