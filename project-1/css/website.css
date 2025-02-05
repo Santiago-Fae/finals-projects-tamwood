@@ -119,3 +119,7 @@
 .boxPagination .page.prevNextLast {
 	font-size: 28px
 }
+
+.centerBlock {
+	margin: 20px auto;
+}
