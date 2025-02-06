@@ -52,13 +52,17 @@
 	color: #fec76c;
 }
 
-.boxMainMenu > ul > li:hover > a,
-.boxMainMenu > ul > li:hover > button {
-	
-} 
-
-.boxMainMenu > ul > li.selected > a {
-	
+.boxMainMenu > ul > li > a:link {
+	color: #fec76c;
+}
+.boxMainMenu > ul > li > a:visited {
+	color:rgb(250, 186, 82);
+}
+.boxMainMenu > ul > li > a:hover {
+	color:rgb(253, 164, 19);
+}
+.boxMainMenu > ul > li > a:active  {
+	color:rgb(100, 62, 0);
 }
 
 /* TITLES */
