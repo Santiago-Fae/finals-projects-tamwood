@@ -97,7 +97,7 @@
 
 
 
-/* BOX PAGINAÇÃO */
+/* BOX Pagination */
 .boxPagination {
 	font-family: sans-serif;
 	text-align: center;
@@ -166,13 +166,33 @@
 	margin: 0 8px 8px 0;
 }
 
-.item1 {
+.boxImages .item1 {
 	order: 2;
 	flex: 1;
 	align-self: stretch;
 }
-.item2 {
+.boxImages .item2 {
 	order: 1;
 	flex: 1;
 	align-self: stretch;
+}
+
+.boxImagesGrid {
+	display: grid;
+	grid-template-areas: 
+	"item1 item2"
+	"item3";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	padding: 50px 200px;
+}
+
+.boxImagesGrid .item4 {
+	overflow: hidden;
+}
+
+.overflowBox {
+	height: 70px;
+    overflow-y: scroll;
 }
