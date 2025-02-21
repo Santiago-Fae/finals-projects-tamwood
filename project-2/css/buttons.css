@@ -1,0 +1,91 @@
+.button {
+	display: inline-block;
+	min-width: 260px;
+	margin: 0;
+	padding: 15px 30px;
+	font-family: '', sans-serif;
+	font-weight: 700;
+	font-size: 16px;
+	line-height: 1.6;
+	text-align: center;
+	letter-spacing: 0.1em;
+	text-transform: uppercase;
+	text-decoration: none !important;
+	color: #ffffff;
+	background-color: #5f9bce;
+	transition: all 0.15s ease-out;
+	border-radius: 10px;
+	outline: none;
+	box-sizing: border-box;
+}
+
+.button:hover {
+	border-color: #3EB54A;
+}
+
+#ButtonAfter {background-image: linear-gradient(to right, #496e9a 0%, #dfdee2 100%)}
+#ButtonAfter {
+   margin: 10px;
+   padding: 15px 45px;
+   text-align: center;
+   text-transform: uppercase;
+   transition: 0.5s;
+   background-size: 200% auto;
+   color: white;            
+   box-shadow: 0 0 20px #eee;
+   border-radius: 10px;
+   display: block;
+   color: white
+}
+
+#ButtonAfter:hover {
+   background-position: right center; /* change the direction of the change here */
+   color: #fff;
+   text-decoration: none;
+   color: black
+}
+
+
+/* VARIATIONS */
+.button.block, .button.fullWidth {
+	display: block;
+	width: 100%;
+}
+
+.button.big {
+	padding: 18px 32px;
+	font-size: 1.6rem;
+	line-height: 1.4em;
+}
+
+.button.medium {
+	padding: 12px 26px;
+	font-size: 1.2rem;
+	line-height: 1.4em;
+}
+
+.button.small {
+	padding: 8px 22px;
+	font-size: 1rem;
+	line-height: 1.2em;
+}
+
+.button.smaller {
+	padding: 6px 16px;
+	font-size: 0.9rem;
+	line-height: 1.2em;
+}
+
+
+
+
+/* COLORS */
+.button.white {
+	border-color: #fff;
+	color: #fff;
+}
+
+.button.white:hover {
+	border-color: #fff;
+	color: #fff;
+}

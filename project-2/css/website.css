@@ -1,0 +1,231 @@
+/* CONTENT */
+.wrapper {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	overflow: visible;
+}
+
+.bgLightGray {
+	background: #e1e1e1;
+}
+
+.containerExtended {
+	max-width: 1540px;
+	margin: 0 auto;
+}
+
+.content {
+	display: block;
+	margin: 0 auto;
+	padding: 0;
+	max-width: 1200px;
+	overflow: visible;
+}
+
+.boxTextContent > * {
+	margin-top: 28px;
+}
+
+.boxTextContent > :first-child {
+	margin-top: 0;
+}
+
+.imgRatio {
+	aspect-ratio: 16 / 9; /* automatically maintains the aspect ratio when the width or height is adjusted */
+    width: 100%;
+	max-width: 100%;
+    height: auto;
+}
+
+.artigosBox {
+	max-width: 388px;
+	box-shadow: 0px 0px 8px rgba(0, 0, 0, 0.15);
+	background-color: #e1e1e1;
+}
+
+.artigosBox img {
+	width: 388px;
+	height: 371px;
+}
+
+
+.artigoDescricao {
+	background: #e1e1e1;
+	padding: 40px;
+}
+
+.artigoDescricao h4 {
+	color: #AC6356;
+}
+
+.artigoBarra {
+	border: 1px solid rgba(0, 0, 0, 0.1);
+	margin-top: 26px;
+}
+
+.galeriaDeImagens {
+	display: flex;
+	flex-wrap: wrap;
+	justify-content: flex-start;
+	margin-right: -8px;
+
+}
+
+.galeriaDeImagens a {
+	width: calc(25% - 8px);
+	margin: 0 8px 8px 0;
+}
+
+/* FOOTER */
+.footer {
+	background-image: linear-gradient(to right, #ff77b5 0%, #fec76c  100%);
+}
+
+.footer .hr {
+	height: 1px;
+	color: #fff;
+	display: block;
+}
+
+.footer {
+	font-weight: 700;
+}
+
+.footer ul li:hover {
+	color: #fff;
+}
+
+.centerBlock {
+	margin: 20px auto;
+}
+
+.textHappyEnding {
+    box-sizing: content-box;
+    margin: 3px;
+    border: 1px solid;
+    padding: 3px;
+    width: 500px;
+    height: 70px;
+}
+
+.titleAfter {
+	background-color: #e1e1e1;
+    color: #ff77b5;
+    font-family: sans-serif;
+    text-align: center;
+}
+
+.clearBoth {
+	clear: both;
+}
+
+.boxImages {
+	display: flex;
+	flex-direction: row;
+	flex-wrap: wrap;
+	align-content: center;
+	justify-content: center;
+	align-items: center;
+	padding: 50px 200px;
+}
+
+.boxImages > a {
+	width: calc(50% - 8px);
+	margin: 0 8px 8px 0;
+}
+
+.boxImages > img {
+	width: calc(50% - 8px);
+	margin: 0 8px 8px 0;
+}
+
+.boxImages .item1 {
+	order: 2;
+	flex: 1;
+	align-self: stretch;
+}
+.boxImages .item2 {
+	order: 1;
+	flex: 1;
+	align-self: stretch;
+}
+
+.boxImagesGrid {
+	display: grid;
+	grid-template-areas: 
+	"item1 item2"
+	"item3";
+	grid-template-columns: 1fr 1fr;
+	grid-template-rows: 1fr;
+	grid-gap: 10px;
+	padding: 50px 200px;
+}
+
+.boxImagesGrid .item4 {
+	overflow: hidden;
+}
+
+.overflowBox {
+	height: 70px;
+    overflow-y: scroll;
+}
+
+/* ########## */
+/* RESPONSIVE */
+/* ########## */
+
+
+/* 1023px */
+@media screen and (max-width: 1023px) {
+	.hideMenu {
+		display: none;
+	}
+	#MenuHamburguer:checked + .hideMenu {
+		display: block;
+	}
+	.fullScreenMenu {
+		position: fixed;
+		top: 0;
+		left: 0;
+		width: 100%;
+		height: 100%;
+		background: #fff;
+		z-index: 9999;
+	}
+	.fullScreenMenu ul {
+		display: flex;
+		flex-direction: column;
+		justify-content: center;
+		align-items: center;
+		height: 100%;
+	}
+  
+  .hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::before {
+	transform: translateY(8px) rotate(45deg);
+  }
+  
+  .hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::after {
+	transform: translateY(-8px) rotate(-45deg);
+  }
+  
+}
+
+
+/* 767px */
+@media screen and (max-width: 767px) {
+}
+
+
+/* 639px */
+@media screen and (max-width: 639px) {
+	
+}
+
+.img25 {
+	width: 25%;
+}
+
+.img50 {
+	width: 50%;
+}

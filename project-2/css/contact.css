@@ -1,0 +1,23 @@
+input, textarea {
+   border: 1px solid #ccc;
+   border-radius: 4px;
+   padding: 8px 14px;   
+}
+
+.absoluteContact {
+   position: absolute;
+   bottom: 0px;
+   right: 10px;
+   font-size: 10px;
+}
+
+.relativeP {
+   position: relative;
+   top: 10px;
+   font-size: 10px;
+   text-align: center;
+}
+
+.menu-toggle:checked + .hamburger + .menu {
+   display: flex;
+ }

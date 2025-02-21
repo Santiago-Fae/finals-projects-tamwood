@@ -1,0 +1,106 @@
+/* INIT */
+html {
+	position: relative;
+	background: white;
+	color: #282828;
+	font-family: sans-serif;
+	font-size: 16px;
+	line-height: 1em;
+	overflow-x: hidden;
+}
+
+body {
+	position: relative;
+	padding-top: 111px;
+	font-family: sans-serif;
+	font-size: 18px;
+	line-height: 2;
+	color: #3A3A3A;
+	overflow-x: hidden;
+}
+
+p { 
+	display: block;
+	margin: 1.6em 0 0 0;
+	line-height: 2;
+	letter-spacing: 0.02em;
+	color: #3A3A3A;
+}
+p:first-child { margin-top: 0; }
+p.centerAlign { text-align: center; margin-left: auto; margin-right: auto; }
+
+div { position: relative; zoom: 1; }
+img { display: block; max-width: 100%; height: auto; }
+hr { display: none; }
+a { display: inline-block; color: inherit; }
+
+* { box-sizing: border-box; position: relative; }
+
+*, *:link, *:visited, *:hover, *:active, *:focus {
+	outline: 0 !important;
+}
+
+*, *:link, *:visited, *:hover, *:active, *:focus, a, a:link, a:visited, a:hover, a:active, a:focus {
+	outline: 0;
+}
+
+.gap30 {
+	gap: 30px;
+}
+
+
+/* BASIC CLASSES */
+.leftAlign { text-align: left; }
+.rightAlign { text-align: right; }
+.centerAlign { text-align: center; }
+.blockCenterAlign { margin-left: auto; margin-right: auto; }
+.leftFloat { float: left; }
+.rightFloat { float: right; }
+.hidden { display: none; }
+.clear { clear: both; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; }
+.clearLeft { clear: left; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; }
+.clearRight { clear: right; display: block; overflow: hidden; visibility: hidden; width: 0; height: 0; font-size: 0; line-height: 0; }
+.division {
+	display: block;
+	height: 1px;
+	background: black;
+	margin: 30px 0;
+}
+
+
+
+
+/* CLEARFIX */
+.clearfix:after {
+	visibility: hidden;
+	display: block;
+	font-size: 0;
+	content: " ";
+	clear: both;
+	height: 0;
+}
+.clearfix { display: inline-block; }
+* html .clearfix { height: 1%; }
+.clearfix { display: block; }
+
+
+
+
+/* MAX WIDTHS */
+.mw1280 { max-width: 1280px; }
+.mw1170 { max-width: 1170px; }
+.mw1024 { max-width: 1024px; }
+.mw960  { max-width: 960px; }
+.mw800  { max-width: 800px; }
+.mw760  { max-width: 760px; }
+.mw640  { max-width: 640px; }
+.mw585  { max-width: 585px; }
+.mw530  { max-width: 530px; }
+.mw520  { max-width: 520px; }
+.mw480  { max-width: 480px; }
+.mw320  { max-width: 320px; }
+.mw90pct { max-width: 90%; }
+.mw80pct { max-width: 80%; }
+.mw70pct { max-width: 70%; }
+.mw60pct { max-width: 60%; }
+.mw50pct { max-width: 50%; }
