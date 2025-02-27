@@ -27,21 +27,42 @@
 			<div class="px-3">
 				<div class="containerExtended">
 					<div class="flex justify-between items-center">
+						<!-- <a href="./" class="logo"><img src="" alt=""></a> -->
 						<a href="../">
 							<h1 class="logoSubstitute">Project Adota Pet</h1>
 						</a>
-						<a href="../">
+						<a href="../" class="hidden lg:block">
 							<img class="logoImage" src="../img/client-images/logo-1.jpg" alt="">
 						</a>
-						<div class="flex justify-end items-center">
+						<div class="justify-end items-center hidden lg:flex">
 							<nav class="boxMainMenu">
 								<ul>
 									<li class=""><a href="../">Home</a></li>
 									<li><a href="./about.html">About</a></li>
 									<li><a href="./alaska.html">Alaska</a></li>
+									<li><a href="./contact.html">Contact</a></li>
 								</ul>
 							</nav>
 						</div>
+						<div class="flex lg:hidden w-12">
+							<label for="MenuHamburguer" class="hamburger hamburger--squeeze">
+								<img src="../img/client-images/burger-menu.svg" alt="Menu">
+							</label>
+							<input type="checkbox" id="MenuHamburguer" class="hidden hamburger-checkbox">
+							<div class="menuClose hideMenu">
+								<label for="MenuHamburguer">
+									<img src="../img/client-images/close-icon.svg" alt="">
+								</label>
+							  </div>
+							<nav class="fullScreenMenu hideMenu">
+								<ul>
+									<li><a href="../">Home</a></li>
+									<li><a href="./about.html">About</a></li>
+									<li><a href="./alaska.html">Alaska</a></li>
+									<li><a href="./contact.html">Contact</a></li>
+								</ul>
+							</nav>
+						</div>	
 					</div>
 				</div>
 			</div>
@@ -70,7 +91,7 @@
 										<button type="submit" class="button adocoes btn-grad">Send</button>
 									</div>
 								</form>
-								<p class="relativeP">Any questions, please visit our FAQ</p>
+								<p class="relativeP">Any questions, please visit our <a href="./faq.html">FAQ</a></p>
 							</div>
 						</div>
 					</div>

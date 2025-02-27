@@ -181,7 +181,10 @@
 	.hideMenu {
 		display: none;
 	}
-	#MenuHamburguer:checked + .hideMenu {
+/* 	#MenuHamburguer:checked + .hideMenu {
+		display: block;
+	} */
+	body:has(#MenuHamburguer:checked) .hideMenu {
 		display: block;
 	}
 	.fullScreenMenu {
@@ -200,14 +203,19 @@
 		align-items: center;
 		height: 100%;
 	}
-  
-  .hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::before {
-	transform: translateY(8px) rotate(45deg);
-  }
-  
-  .hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::after {
-	transform: translateY(-8px) rotate(-45deg);
-  }
+    .menuClose {
+		position: fixed;
+		z-index: 10000;
+		right: 50px;
+		top: 50px;
+	  }
+	.hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::before {
+		transform: translateY(8px) rotate(45deg);
+	}
+	
+	.hamburger-checkbox:checked + .hamburger label .hamburger-box .hamburger-inner::after {
+		transform: translateY(-8px) rotate(-45deg);
+	}
   
 }
 

@@ -11,6 +11,7 @@
 ## Technologies Used
 
 - **HTML and CSS** for the user interface.
+- **Responsive** for mobile and tablet.
 
 ## How to Contribute
 
